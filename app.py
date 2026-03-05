@@ -64,7 +64,7 @@ if st.button("Predict Diabetes Risk"):
 
     data = np.array([[pregnancies,glucose,bp,skin,insulin,bmi,dpf,age]])
 
-    data_sclaed = scaler.transform(data)
+    data_scaled = scaler.transform(data)
     prediction = model.predict(data)
 
     st.subheader("Prediction Result")
